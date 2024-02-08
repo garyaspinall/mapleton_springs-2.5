@@ -1,0 +1,57 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mapleton Springs B&B</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body class="bg-off-white">
+    <Header></Header>
+    <main
+      class="text-center text-xl font-thin italic text-green1"
+    >
+      <h1 class="text-2xl font-semibold py-5 leading-none">
+        ~ Rest, Rejuvenate &amp; Reconnect ~
+      </h1>
+      <img class="w-full" src="/public/drone_view.webp" />
+      <div class="pb-52 pt-32 leading-10">
+        <p class="m-auto max-w-4xl py-3">
+          Awaken in your luxury accommodation with breathtaking and spectacular
+          views of the Sunshine Coast Hinterland. Ideal for a romantic getaway
+          in a quiet location.
+        </p>
+        <p class="m-auto max-w-4xl py-3">
+          Enjoy a relaxing swim in the infinity edge pool, or soak away in a hot
+          tub with a view. If the weather turns poor, you can still retreat to
+          the cinema room and immerse yourself in a movie of your choice.
+          Alternatively enjoy a game of table tennis or chess in the lounge
+          room. There is also a range of games, jigsaw puzzles and books to
+          enjoy.
+        </p>
+        <p class="m-auto max-w-4xl py-3">
+          During the cooler months the open wood fire in the lounge room is a
+          treat with complimentary marshmallows to melt and enjoy.
+        </p>
+        <p class="m-auto max-w-4xl py-3">
+          Catering for a maximum of eight adults giving you time to Rest,
+          Rejuvenate and Reconnect.
+        </p>
+      </div>
+    </main>
+    <Footer></Footer>
+    
+  </body>
+</html>

@@ -1,0 +1,160 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mapleton Springs B&B</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Carousel -->
+    <script>
+      window.onload = function () {
+        var carouselParents = document.querySelectorAll(".carouselParent");
+
+        carouselParents.forEach((carouselParent) => {
+          var images = carouselParent.children;
+
+          let currentImageIndex = 0;
+          images[currentImageIndex].classList.remove("hidden");
+
+          function cycleImages() {
+            images[currentImageIndex].classList.add("hidden");
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) {
+              currentImageIndex = 0;
+            }
+            images[currentImageIndex].classList.remove("hidden");
+          }
+
+          setInterval(cycleImages, 5000);
+        });
+      };
+    </script>
+  </head>
+  <body class="bg-off-white">
+    <Header />
+    <main class="m-auto max-w-4xl py-16 text-center text-xl italic text-green1">
+      <div class="py-12">
+        <h2>
+          Mapleton Springs King Suite in building away from main residence.
+        </h2>
+        <ol class="carouselParent flex justify-center">
+          <li class="py-14">
+            <img src="/public/bedroom.webp" class="m-auto h-96" />
+          </li>
+          <p>
+            Three rooms are in a building detached from the main residence. King
+            sized bed, ensuite and kitchenette in each room. A split system
+            reverse cycle air-conditioning for each unit.
+          </p>
+        </ol>
+        <li class="hidden py-14">
+          <img src="/public/kitchenette.webp" class="m-auto h-96" />
+        </li>
+        <p>
+          A kitchenette with bar fridge, microwave, kettle & toaster in each
+          unit. Complimentary tea, coffee and milk.
+        </p>
+      </div>
+      <li class="hidden py-14">
+        <img src="/public/ensuite.webp" class="m-auto h-96" />
+      </li>
+      <p>
+        Modern ensuite bathroom with choice of shower head. Complimentary
+        shampoo, conditioner and body wash. Linen is all hired to ensure Covid
+        safety.
+      </p>
+    </main>
+    <li class="hidden py-14">
+      <img src="/public/dining table small.webp" class="m-auto h-96" />
+    </li>
+    <p>Free WIFI & Smart TV with Netflix.</p>
+  </body>
+  <li class="hidden py-14">
+    <img src="/public/balcony.webp" class="m-auto h-96" />
+  </li>
+  <p>
+    Private balcony with reclining chairs and footrests. Each unit has the same
+    stunning Hinterland Valley Views.
+  </p>
+</html>
+<li class="hidden py-14">
+  <img src="/public/kookaburra.webp" class="m-auto h-96" />
+</li>
+<p>
+  Reconnect with nature that surrounds. Enjoy a wide range of birdlife and
+  wallabies from your balcony.
+</p>
+
+<li class="hidden py-14">
+  <img src="/public/outside_units.webp" class="m-auto h-96" />
+</li>
+<p>
+  Three units in a building away from the main residence with parking
+  immediately in front on your accommodation.
+</p>
+
+<div class="py-12">
+  <h2>
+    Mapleton Springs King Suite with Spa Bath attached to main residence with
+    separate entry.
+  </h2>
+  <ol class="carouselParent flex justify-center">
+    <li class="py-14">
+      <img src="/public/" class="m-auto h-96" />
+    </li>
+    <p>
+      This is the only room with a large spa bath, double rain shower and double
+      vanity.
+    </p>
+  </ol>
+  <li class="hidden py-14">
+    <img src="/public/" class="m-auto h-96" />
+  </li>
+  <p>King sized bed, ensuite and kitchenette.</p>
+</div>
+<li class="hidden py-14">
+  <img src="/public/" class="m-auto h-96" />
+</li>
+<p>King sized bed with smart television and free Netflix.</p>
+
+<li class="hidden py-14">
+  <img src="/public/" class="m-auto h-96" />
+</li>
+<p>
+  Modern ensuite bathroom with large spa bath, two showers and double vanity.
+  Complimentary shampoo, conditioner and body wash. Linen is all hired to ensure
+  Covid safety.
+</p>
+
+<li class="hidden py-14">
+  <img src="/public/" class="m-auto h-96" />
+</li>
+<p>
+  Air conditioning, ceiling fan and USB charging ports above to bedside tables.
+</p>
+
+<li class="hidden py-14">
+  <img src="/public/" class="m-auto h-96" />
+</li>
+<p>
+  Terrace with reclining chairs and footrests to enjoy nature and the stunning
+  Hinterland Valley Views.
+</p>
+
+<li class="hidden py-14">
+  <img src="/public/" class="m-auto h-96" />
+</li>
+<p>
+  Kitchenette with bar fridge, microwave, kettle and complimentary tea, coffee
+  and milk.
+</p>
+
+<Footer />
