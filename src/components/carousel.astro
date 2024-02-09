@@ -1,0 +1,22 @@
+<!-- TODO: Create generic carousel component so that images (with text) can be added as slides. -->
+
+<script>
+    let carousel = document.getElementById("carousel");
+    let slides = carousel!.children;
+    let currentImageIndex = 0;
+    slides[currentImageIndex].classList.remove("translate-x-20");
+
+    function cycleImages() {
+    slides[currentImageIndex].classList.add("translate-x-20");
+    currentImageIndex++;
+    if (currentImageIndex >= slides.length) {
+        currentImageIndex = 0;
+    }
+    slides[currentImageIndex].classList.remove("translate-x-20");
+    }
+    setInterval(cycleImages, 5000);
+</script>
+
+<div id="carousel" class="flex justify-center">
+    <slot></slot>
+</div>
