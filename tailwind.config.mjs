@@ -11,7 +11,11 @@ export default {
       'white': '#FFFFFF',
       'off-white': '#FCF8ED',
     },
-		extend: {},
+		extend: {
+			spacing: {
+				'carouselHeight': '800px',
+			}
+		},
 	},
 	plugins: [
 		require('flowbite/plugin')
