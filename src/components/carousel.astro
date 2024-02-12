@@ -1,16 +1,17 @@
-<!-- TODO: Create generic carousel component so that images (with text) can be added as slides. --><!-- <script>
+<!-- TODO: Create generic carousel component so that images (with text) can be added as slides. -->
+<!-- <script>
     let carousel = document.getElementById("carousel");
     let slides = carousel!.children;
     let currentImageIndex = 0;
-    slides[currentImageIndex].classList.remove("translate-x-20");
+    slides[currentImageIndex].classList.remove("translate-x-full");
 
     function cycleImages() {
-    slides[currentImageIndex].classList.add("translate-x-20");
+    slides[currentImageIndex].classList.add("translate-x-full");
     currentImageIndex++;
     if (currentImageIndex >= slides.length) {
         currentImageIndex = 0;
     }
-    slides[currentImageIndex].classList.remove("translate-x-20");
+    slides[currentImageIndex].classList.remove("translate-x-full");
     }
     setInterval(cycleImages, 5000);
 </script>
@@ -18,29 +19,42 @@
 <div id="carousel" class="flex justify-center">
     <slot></slot>
 </div> -->
+
+
 <script
   src="C:/Users/Gary/VSCode Projects/mapleton_springs-2.5/node_modules/flowbite/dist/flowbite.min.js"
 ></script>
 
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <!-- Item 1 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/bedroom.webp"
-        class="absolute block w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-      <p class="relative text-center bg-off-white rounded-lg py-1">Test</p>
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-carouselHeight">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/bedroom.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/kitchenette.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/ensuite.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/dining table small.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/balcony.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 6 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/kookaburra.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 7 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/outside_units.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        
     </div>
-    <!-- Item 2 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/bbq.webp"
-        class="absolute block w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-  </div>
-</div>
